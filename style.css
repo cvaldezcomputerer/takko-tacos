@@ -86,7 +86,6 @@ body {
 }
 
 .chef-character {
-  font-size: 3rem;
   background: white;
   border-radius: 50%;
   width: 80px;
@@ -96,6 +95,12 @@ body {
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: bounce 2s infinite;
+}
+.chef-character img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 @keyframes bounce {
@@ -209,39 +214,43 @@ body {
 
 /* Schedule Section */
 .schedule-section {
-  padding: 20px;
+  padding: 12px;
   background-color: #f8f9fa;
 }
 
 .schedule-section h3 {
   color: #dc3545;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-.schedule-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .schedule-item {
   background: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  font-weight: bold;
+  color: #dc3545;
 }
 
 .date {
   font-weight: bold;
   color: #dc3545;
-  font-size: 1.1rem;
+  font-size: 2rem;
 }
 
 .time {
+  font-size: 2rem;
   color: #666;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 /* CTA Section */
